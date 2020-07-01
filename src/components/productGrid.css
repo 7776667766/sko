@@ -1,0 +1,18 @@
+.productGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.product {
+    /* margin: 10px; */
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .product {
+        margin: 30px;
+        width: 40%;
+    }
+}
