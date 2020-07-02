@@ -10,9 +10,22 @@
     width: 100%;
 }
 
+/* .addbtn {
+    display: none !important;
+}
+.product:hover + .addbtn {
+    display: block !important;
+} */
+
+
 @media only screen and (min-width: 1000px) {
     .product {
         margin: 30px;
         width: 40%;
     }
+    .addBtn {
+        display: none;
+        color: pink;
+    }
 }
+
