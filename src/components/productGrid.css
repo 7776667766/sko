@@ -10,12 +10,12 @@
     width: 100%;
 }
 
-/* .addbtn {
+.addbtn {
     display: none !important;
 }
-.product:hover + .addbtn {
+.product:hover .addbtn {
     display: block !important;
-} */
+}
 
 
 @media only screen and (min-width: 1000px) {
