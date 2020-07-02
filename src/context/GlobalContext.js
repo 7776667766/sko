@@ -7,14 +7,13 @@ const startingState = {
         { id: 2, name: 'Black Seude', price:199, img: require('../components/img/1.jpg') },
         { id: 3, name: 'White', price:666, img: require('../components/img/5.jpg') },
         { id: 4, name: 'Desert', price:323, img: require('../components/img/7.jpg') },
-        { id: 5, name: 'Desert', price:990, img: require('../components/img/2.jpg') },
-        { id: 6, name: 'Desert', price:111, img: require('../components/img/4.jpg') },
-        { id: 7, name: 'Desert', price:323, img: require('../components/img/6.jpg') },
-        { id: 8, name: 'Desert', price:323, img: require('../components/img/8.jpg') },
+        { id: 5, name: 'Desert Flats', price:990, img: require('../components/img/2.jpg') },
+        { id: 6, name: 'White Mule', price:111, img: require('../components/img/4.jpg') },
+        { id: 7, name: 'Brown Mule', price:323, img: require('../components/img/6.jpg') },
+        { id: 8, name: 'Chelsea Boots', price:323, img: require('../components/img/8.jpg') },
     ],
     cart: [
-      { id: 1, name: 'Gray', price:220, quantity:1, img: require('../components/img/3.jpg') },
-      { id: 2, name: 'Black Seude', price:199, quantity:1, img: require('../components/img/1.jpg') },
+      
     ]
 }
 
