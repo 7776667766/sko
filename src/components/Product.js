@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Card, Button } from 'react-bootstrap'
 // import { Card, Typography, CardContent, Button } from '@material-ui/core'
-
+import './product.css'
 import { GlobalContext } from '../context/GlobalContext'
 
 const Product = ({ product }) => {
@@ -24,6 +24,7 @@ const Product = ({ product }) => {
             <Card.Img variant="top" src={product.img} />
             <Card.ImgOverlay>
                 {/* <Card.Title>{product.name}</Card.Title> */}
+                <Button variant="outline-dark" className="addbtn" onClick={add}><i className="fa fa-plus" aria-hidden="true"></i></Button>
             </Card.ImgOverlay>
             </Card>
         </div>

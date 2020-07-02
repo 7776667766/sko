@@ -1,19 +1,20 @@
 import React, { useContext } from 'react'
+import { Table } from 'react-bootstrap'
 // import './Cart.css'
-// import { GlobalContext } from '../context/GlobalContext'
+import { GlobalContext } from '../context/GlobalContext'
 
-// import CartItem from './CartItem'
+import CartItem from './CartItem'
 
 const Cart = () => {
-    // const { cart } = useContext(GlobalContext);
+    const { cart } = useContext(GlobalContext);
 
     return (
         <div className="cart">
-            <h1>Cart</h1>
             {/* {cart.map(item => (<CartItem key={item.id} product={item} />))} */}
-            {/* <table id="cartTable">
+            <Table id="cartTable">
             <thead>
                 <tr>
+                    <th></th>
                     <th>Name</th>
                     <th>Price</th>
                     <th>Quantity</th>
@@ -23,7 +24,7 @@ const Cart = () => {
             <tbody>
             {cart.map(item => (<CartItem key={item.id} product={item} />))}
             </tbody>
-            </table> */}
+            </Table>
         </div>
     )
 }

@@ -3,18 +3,18 @@ import AppReducer from './AppReducer'
 
 const startingState = {
     products: [
-        { id: 1, name: 'Zero to One', price:10, img: require('../components/img/3.jpg') },
-        { id: 2, name: 'Zero to One', price:10, img: require('../components/img/1.jpg') },
-        { id: 3, name: 'Zero to One', price:10, img: require('../components/img/5.jpg') },
-        { id: 3, name: 'Zero to One', price:10, img: require('../components/img/7.jpg') },
+        { id: 1, name: 'Gray', price:220, img: require('../components/img/3.jpg') },
+        { id: 2, name: 'Black Seude', price:199, img: require('../components/img/1.jpg') },
+        { id: 3, name: 'White', price:666, img: require('../components/img/5.jpg') },
+        { id: 3, name: 'Desert', price:323, img: require('../components/img/7.jpg') },
         // { id: 2, name: 'Antifragile', price:20, img: "./img/2.jpg" },
         // { id: 3, name: 'Sapiens', price:99, img: "./img/3.jpg" },
         // { id: 4, name: 'The Learn Startup', price:33, img: "./img/4.jpg" },
         // { id: 5, name: 'AI Superpowers', price:2, img: "./img/5.jpg"},
     ],
     cart: [
-      { id: 4, name: 'The Learn Startup', price:33, quantity: 1},
-        { id: 5, name: 'AI Superpowers', price:2, quantity: 1},
+      { id: 1, name: 'Gray', price:220, quantity:1, img: require('../components/img/3.jpg') },
+      { id: 2, name: 'Black Seude', price:199, quantity:1, img: require('../components/img/1.jpg') },
     ]
 }
 
@@ -38,6 +38,7 @@ export const GlobalProvider = ({ children }) => {
     }
 
     function increase(id) {
+      console.log("WOW")
       dispatch({
         type: 'increase',
         payload: id
