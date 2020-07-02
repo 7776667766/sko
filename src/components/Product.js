@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 import { Card, Button } from 'react-bootstrap'
-// import { Card, Typography, CardContent, Button } from '@material-ui/core'
-import './product.css'
 import { GlobalContext } from '../context/GlobalContext'
 
 const Product = ({ product }) => {
