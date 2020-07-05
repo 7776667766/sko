@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link  } from 'react-router-dom'
 import { Nav, Button, Container, Row, Col } from 'react-bootstrap'
 
-import Navigation from './components/Navigation'
-import ProductGrid from './components/ProductGrid';
+import Navigation from './components/Navigation/Navigation'
+import ProductGrid from './components/ProductGrid/ProductGrid';
 import Cart from './components/Cart'
 
 import { GlobalProvider } from './context/GlobalContext'

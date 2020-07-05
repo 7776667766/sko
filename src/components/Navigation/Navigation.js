@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link  } from 'react-router-dom'
 import { Nav } from 'react-bootstrap'
-import { GlobalContext } from '../context/GlobalContext'
+import { GlobalContext } from '../../context/GlobalContext'
 import './navigation.css'
 
 function Navigation() {

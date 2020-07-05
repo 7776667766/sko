@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+// import { Container, Row, Col } from 'react-bootstrap'
 import './productGrid.css'
-import Product from './Product'
-import { GlobalContext } from '../context/GlobalContext'
+import Product from '../Product'
+import { GlobalContext } from '../../context/GlobalContext'
 
 const ProductGrid = () => {
     const { products } = useContext(GlobalContext);
