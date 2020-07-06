@@ -5,6 +5,7 @@ import { Nav, Button, Container, Row, Col } from 'react-bootstrap'
 import Navigation from './components/Navigation/Navigation'
 import ProductGrid from './components/ProductGrid/ProductGrid';
 import Cart from './components/Cart'
+import ProductPage from './components/ProductPage/ProductPage'
 
 import { GlobalProvider } from './context/GlobalContext'
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductGrid />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="products/:productID" element={<ProductPage />} /> 
         </Routes>
       </Router>
     </GlobalProvider>
