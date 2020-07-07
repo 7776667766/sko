@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Card, Button } from 'react-bootstrap'
+import { Link  } from 'react-router-dom'
 import { GlobalContext } from '../context/GlobalContext'
 
 const Product = ({ product }) => {
@@ -19,11 +20,22 @@ const Product = ({ product }) => {
         <div className="product">
             <Card border="light">
             {/* <img src={product.img} /> */}
-            <Card.Img variant="top" src={product.img} />
-            <Card.ImgOverlay>
-                {/* <Card.Title>{product.name}</Card.Title> */}
-                <Button variant="outline-dark" className="addbtn" onClick={add}><i className="fa fa-plus" aria-hidden="true"></i></Button>
-            </Card.ImgOverlay>
+            
+            
+            <Link to={`products/${product.id}`} >
+            <Card.Img className="cardimage" variant="top" src={product.img} />
+            </Link>
+            <Card.Body className="d-flex ">
+                <div>
+                <Card.Title>{product.name}</Card.Title>
+                <Card.Text>
+                    
+                ${product.price}
+                </Card.Text>
+                </div>
+                <Button className="addbtn ml-4" variant="outline" onClick={add}><i className="fa fa-plus" aria-hidden="true"></i>  Add to cart</Button>
+            </Card.Body>
+            
             </Card>
         </div>
         // <div className="product">

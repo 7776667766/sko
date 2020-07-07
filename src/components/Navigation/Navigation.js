@@ -9,10 +9,10 @@ function Navigation() {
     return (
         <Nav className="justify-content-center" activeKey="/">
             <Nav.Item>
-            <Nav.Link as={Link} to="/"><i class="fa fa-home"></i></Nav.Link>
+            <Nav.Link as={Link} to="/"><i className="fa fa-home"></i></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-            <Nav.Link as={Link} to="/cart"><i class="fa fa-shopping-cart"></i>({cart.length})</Nav.Link>
+            <Nav.Link as={Link} to="/cart"><i className="fa fa-shopping-cart"></i>({cart.length})</Nav.Link>
             </Nav.Item>
         </Nav>
     )

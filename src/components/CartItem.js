@@ -36,7 +36,7 @@ const CartItem = ({ product }) => {
                 <td>{ product.quantity }</td>
                 
                 <td>
-                    <Button variant="outline-primary" onClick={increaseQtty}>
+                    <Button className="mr-1" variant="outline-primary" onClick={increaseQtty}>
                         <i className="fa fa-plus" aria-hidden="true"></i>
                     </Button>
                     <Button variant="outline-secondary" onClick={decreaseQtty}>
