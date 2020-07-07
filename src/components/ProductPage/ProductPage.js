@@ -7,13 +7,9 @@ const ProductPage = () => {
     const { productID } = useParams();
     const { products, addToCart, cart, increase } = useContext(GlobalContext);
     const product = products[products.findIndex(item => item.id == productID)]
-    // console.log(productID)
-    console.log(product)
-    // console.log(products.find(p => p.id == productID))
 
     const add = () => {
         if (cart.find(item => item.id === product.id)) {
-            // product.quantity++;
             increase(product.id)
         } else {
             product.quantity=1;

@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { Table } from 'react-bootstrap'
-// import './Cart.css'
 import { GlobalContext } from '../context/GlobalContext'
 
 import CartItem from './CartItem'
@@ -10,7 +9,6 @@ const Cart = () => {
 
     return (
         <div className="cart">
-            {/* {cart.map(item => (<CartItem key={item.id} product={item} />))} */}
             <Table id="cartTable">
             <thead>
                 <tr>

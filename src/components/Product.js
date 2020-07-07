@@ -8,7 +8,6 @@ const Product = ({ product }) => {
 
     const add = () => {
         if (cart.find(item => item.id === product.id)) {
-            // product.quantity++;
             increase(product.id)
         } else {
             product.quantity=1;
@@ -19,8 +18,6 @@ const Product = ({ product }) => {
     return (
         <div className="product">
             <Card border="light">
-            {/* <img src={product.img} /> */}
-            
             
             <Link to={`products/${product.id}`} >
             <Card.Img className="cardimage" variant="top" src={product.img} />
@@ -28,8 +25,7 @@ const Product = ({ product }) => {
             <Card.Body className="d-flex ">
                 <div>
                 <Card.Title>{product.name}</Card.Title>
-                <Card.Text>
-                    
+                <Card.Text>    
                 ${product.price}
                 </Card.Text>
                 </div>
@@ -38,19 +34,6 @@ const Product = ({ product }) => {
             
             </Card>
         </div>
-        // <div className="product">
-        //     <Card variant="outlined">
-        //             <CardContent>
-        //                 <Typography variant="h5">{ product.name }</Typography>
-        //                 <Typography variant="h6">${ product.price }</Typography>
-        //                 <Button variant="outlined" color="primary" size="small" onClick={add}>Add to Cart</Button>
-        //             </CardContent>
-        //     </Card>
-        //     {/* <h1>{ product.name }</h1>
-        //     <p>${ product.price }</p>
-        //     {/* <p>${Math.floor(Math.random()*100)}</p> */}
-        //     {/* <button onClick={add}>Add to Cart</button> */}
-        // </div>
     )
 }
 
